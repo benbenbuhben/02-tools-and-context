@@ -26,17 +26,14 @@ Configure the root of your repository with the following files and directories. 
 #### List Module
   * implement a List constructor using a constructor, factory, or class
   * implement the length property
-  * implement `push()`, `pop()`, `shift()`, and `unshift()` methods on the List prototype
+  * implement `push()`, `pop()` methods on the List prototype
   * implement `forEach()`, `map()`, `filter()`, and `reduce()` as pure methods on the List prototype
-  * implement `slice()`, and `splice()` as methods on the List prototype
   * Do not use any built-in array methods to do this
   
 #### Stretch Goals
-  * Repeat the above process, using call/apply/bind to interface with built-in array methods.
-  * e.g.
-  `map(list, callback) { 
-    return Array.prototype.map.call( list, callback ); 
-  }`
+  * implement `slice()`, and `splice()` as methods on the List prototype
+  * implement `shift()`, and `unshift()` as methods on the List prototype
+  * These mutating methods will require you to re-index the list!
 
 ## Testing
 Create a NodeJS module in the \_\_test\_\_/ directory named `list.test.js` that asserts the correctness of the list module.
