@@ -20,24 +20,24 @@
     </h1>
     <div class='clearfix'>
       <div class='fl pad1y space-right2'>
-        <span class="strong">75% </span>
+        <span class="strong">66.67% </span>
         <span class="quiet">Statements</span>
-        <span class='fraction'>36/48</span>
+        <span class='fraction'>36/54</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">44.44% </span>
+        <span class="strong">40% </span>
         <span class="quiet">Branches</span>
-        <span class='fraction'>8/18</span>
+        <span class='fraction'>8/20</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">88.89% </span>
+        <span class="strong">80% </span>
         <span class="quiet">Functions</span>
-        <span class='fraction'>8/9</span>
+        <span class='fraction'>8/10</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">75% </span>
+        <span class="strong">66.67% </span>
         <span class="quiet">Lines</span>
-        <span class='fraction'>36/48</span>
+        <span class='fraction'>36/54</span>
       </div>
     </div>
     <p class="quiet">
@@ -144,15 +144,25 @@
 <a name='L96'></a><a href='#L96'>96</a>
 <a name='L97'></a><a href='#L97'>97</a>
 <a name='L98'></a><a href='#L98'>98</a>
-<a name='L99'></a><a href='#L99'>99</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L99'></a><a href='#L99'>99</a>
+<a name='L100'></a><a href='#L100'>100</a>
+<a name='L101'></a><a href='#L101'>101</a>
+<a name='L102'></a><a href='#L102'>102</a>
+<a name='L103'></a><a href='#L103'>103</a>
+<a name='L104'></a><a href='#L104'>104</a>
+<a name='L105'></a><a href='#L105'>105</a>
+<a name='L106'></a><a href='#L106'>106</a>
+<a name='L107'></a><a href='#L107'>107</a>
+<a name='L108'></a><a href='#L108'>108</a>
+<a name='L109'></a><a href='#L109'>109</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">15x</span>
+<span class="cline-any cline-yes">16x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">43x</span>
+<span class="cline-any cline-yes">46x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -204,8 +214,8 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
@@ -218,12 +228,22 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
@@ -263,7 +283,7 @@ class List {
   shift() {
     let item = this[0];
     for (let i = 0; i &lt;= this.length - 1; i++) {
-      this[i] = this[i + 1]
+      this[i] = this[i + 1];
     }
     delete this[this.length - 1];
     this.length--;
@@ -314,23 +334,33 @@ class List {
     return result;
   }
 &nbsp;
+<span class="fstat-no" title="function not covered" >  re</span>duce(callback) {
+<span class="cstat-no" title="statement not covered" >    if (typeof callback !== 'function') {</span>
+<span class="cstat-no" title="statement not covered" >      return undefined;</span>
+    }
+    let result = <span class="cstat-no" title="statement not covered" >0;</span>
+<span class="cstat-no" title="statement not covered" >    for (let i = 0; i &lt;= this.length - 1; i++) {</span>
+<span class="cstat-no" title="statement not covered" >      result=callback(result,this[i]);</span>
+    }
+<span class="cstat-no" title="statement not covered" >    return result;</span>
+  }
+&nbsp;
 <span class="fstat-no" title="function not covered" >  sl</span>ice(...args) {
     let newArray = <span class="cstat-no" title="statement not covered" >new List();</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    if(args.length===1){</span>
-<span class="cstat-no" title="statement not covered" >      if(args[0] &lt; 0){</span>
+<span class="cstat-no" title="statement not covered" >    if (args.length === 1) {</span>
+<span class="cstat-no" title="statement not covered" >      if (args[0] &lt; 0) {</span>
 <span class="cstat-no" title="statement not covered" >        for (let i = this.length + args[0]; i &lt; this.length; i++) {</span>
 <span class="cstat-no" title="statement not covered" >          newArray.push(this[i]);</span>
-        }}
-     
-      else <span class="cstat-no" title="statement not covered" >if(args[0] &gt; 0 &amp;&amp; args[0] &lt; this.length){</span>
+        }
+      } else <span class="cstat-no" title="statement not covered" >if (args[0] &gt; 0 &amp;&amp; args[0] &lt; this.length) {</span>
 <span class="cstat-no" title="statement not covered" >        for (let i = args[0]; i &lt; this.length; i++) {</span>
 <span class="cstat-no" title="statement not covered" >          newArray.push(this[i]);</span>
         }
       }
     }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    if(args.length&gt;1){</span>
+<span class="cstat-no" title="statement not covered" >    if (args.length &gt; 1) {</span>
 <span class="cstat-no" title="statement not covered" >      for (let i = args[0]; i &lt; args[1]; i++) {</span>
 <span class="cstat-no" title="statement not covered" >        newArray.push(this[i]);</span>
       }
@@ -346,7 +376,7 @@ module.exports = List;</pre></td></tr>
 </div><!-- /wrapper -->
 <div class='footer quiet pad2 space-top1 center small'>
   Code coverage
-  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Wed May 16 2018 08:20:43 GMT-0700 (PDT)
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Sun May 20 2018 16:44:30 GMT-0700 (PDT)
 </div>
 </div>
 <script src="prettify.js"></script>

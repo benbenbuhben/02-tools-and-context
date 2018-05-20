@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1526484044060" clover="3.2.0">
-  <project timestamp="1526484044061" name="All files">
-    <metrics statements="48" coveredstatements="36" conditionals="18" coveredconditionals="8" methods="9" coveredmethods="8" elements="75" coveredelements="52" complexity="0" loc="48" ncloc="48" packages="1" files="1" classes="1">
+<coverage generated="1526859870750" clover="3.2.0">
+  <project timestamp="1526859870750" name="All files">
+    <metrics statements="54" coveredstatements="36" conditionals="20" coveredconditionals="8" methods="10" coveredmethods="8" elements="84" coveredelements="52" complexity="0" loc="54" ncloc="54" packages="1" files="1" classes="1">
       <file name="list.js" path="/Users/benjaminhurst/codefellows/401/lab-ben/02-tools-and-context/lib/list.js">
-        <metrics statements="48" coveredstatements="36" conditionals="18" coveredconditionals="8" methods="9" coveredmethods="8"/>
-        <line num="5" count="15" type="stmt"/>
-        <line num="9" count="43" type="stmt"/>
+        <metrics statements="54" coveredstatements="36" conditionals="20" coveredconditionals="8" methods="10" coveredmethods="8"/>
+        <line num="5" count="16" type="stmt"/>
+        <line num="9" count="46" type="stmt"/>
         <line num="13" count="2" type="stmt"/>
         <line num="14" count="2" type="stmt"/>
         <line num="15" count="2" type="stmt"/>
@@ -32,26 +32,32 @@
         <line num="54" count="1" type="stmt"/>
         <line num="55" count="3" type="stmt"/>
         <line num="57" count="1" type="stmt"/>
-        <line num="61" count="2" type="cond" truecount="2" falsecount="0"/>
-        <line num="62" count="1" type="stmt"/>
+        <line num="61" count="3" type="cond" truecount="2" falsecount="0"/>
+        <line num="62" count="2" type="stmt"/>
         <line num="64" count="1" type="stmt"/>
         <line num="65" count="1" type="stmt"/>
         <line num="66" count="3" type="cond" truecount="2" falsecount="0"/>
         <line num="67" count="1" type="stmt"/>
         <line num="70" count="1" type="stmt"/>
-        <line num="74" count="0" type="stmt"/>
-        <line num="76" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="77" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="74" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="75" count="0" type="stmt"/>
+        <line num="77" count="0" type="stmt"/>
         <line num="78" count="0" type="stmt"/>
         <line num="79" count="0" type="stmt"/>
-        <line num="82" count="0" type="cond" truecount="0" falsecount="4"/>
-        <line num="83" count="0" type="stmt"/>
-        <line num="84" count="0" type="stmt"/>
-        <line num="89" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="81" count="0" type="stmt"/>
+        <line num="85" count="0" type="stmt"/>
+        <line num="87" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="88" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="89" count="0" type="stmt"/>
         <line num="90" count="0" type="stmt"/>
-        <line num="91" count="0" type="stmt"/>
+        <line num="92" count="0" type="cond" truecount="0" falsecount="4"/>
+        <line num="93" count="0" type="stmt"/>
         <line num="94" count="0" type="stmt"/>
-        <line num="99" count="1" type="stmt"/>
+        <line num="99" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="100" count="0" type="stmt"/>
+        <line num="101" count="0" type="stmt"/>
+        <line num="104" count="0" type="stmt"/>
+        <line num="109" count="1" type="stmt"/>
       </file>
     </metrics>
   </project>
